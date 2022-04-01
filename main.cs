@@ -13,9 +13,9 @@ class Program
         float length;
         float width;
         float height;
-        float volume
+        float volume;
         
-
+        //input
         Console.WriteLine("This program finds the volume of a pyramid.");
         Console.WriteLine("");
         Console.WriteLine("Formula = (length x width x height) / 3.");
@@ -27,8 +27,10 @@ class Program
         Console.Write("Enter the height of the pyramid (mm): ");
         height = float.Parse(Console.ReadLine());
 
+        //process
         volume = (length * width * height) / 3;
 
+        //output
         Console.WriteLine("");
         Console.Write("Volume of the pyramid = " + volume.ToString("0.00") + " mm³");
         Console.ReadKey();
