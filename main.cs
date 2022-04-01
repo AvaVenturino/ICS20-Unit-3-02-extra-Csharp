@@ -10,25 +10,27 @@ class Program
     public static void Main(string[] args)
     {
         // This function accepts user input
-        int length;
-        int width;
-        int height;
+        float length;
+        float width;
+        float height;
+        float volume
+        
 
         Console.WriteLine("This program finds the volume of a pyramid.");
         Console.WriteLine("");
         Console.WriteLine("Formula = (length x width x height) / 3.");
         Console.WriteLine("");
         Console.Write("Enter the length of the pyramid (mm): ");
-        length = Convert.ToInt32(Console.ReadLine());
+        length = float.Parse(Console.ReadLine());
         Console.Write("Enter the width of the pyramid (mm): ");
-        width = Convert.ToInt32(Console.ReadLine());
+        width = float.Parse(Console.ReadLine());
         Console.Write("Enter the height of the pyramid (mm): ");
-        height = Convert.ToInt32(Console.ReadLine());
+        height = float.Parse(Console.ReadLine());
 
-        Double volume = (length * width * height) / 3;
+        volume = (length * width * height) / 3;
 
         Console.WriteLine("");
-        Console.Write("Volume of the pyramid = " + volume + " mm³");
+        Console.Write("Volume of the pyramid = " + volume.ToString("0.00") + " mm³");
         Console.ReadKey();
         Console.WriteLine("\nDone.");
     }
