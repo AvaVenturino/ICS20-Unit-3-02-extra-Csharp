@@ -14,7 +14,6 @@ class Program
         float width;
         float height;
         float volume;
-        
         //input
         Console.WriteLine("This program finds the volume of a pyramid.");
         Console.WriteLine("");
